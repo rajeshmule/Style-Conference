@@ -29,11 +29,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
-  color: #888;
-  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /*font-family: 'Lato', sans-serif;*/
-
-
 }
 ol, ul {
   list-style: none;
@@ -86,6 +81,8 @@ h1, h2, h3, h4 {
 }
 
 
+
+
 /*
   ========================================
   Buttons
@@ -93,14 +90,25 @@ h1, h2, h3, h4 {
 */
 
 .btn {
-  border-radius: 5px;
+ border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
   display: inline-block;
   margin: 0;
+  letter-spacing: .5px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
+
 .btn-alt {
   border: 1px solid #dfe2e5;
   padding: 10px 30px;
 }
+.btn-alt:hover {
+  background: #fff;
+  color: #648880;
+}
+
 /*
   ========================================
   Home
@@ -108,6 +116,7 @@ h1, h2, h3, h4 {
 */
 
 .hero {
+  color: #fff;
   line-height: 44px;
   padding: 22px 80px 66px 80px;
   text-align: center;
@@ -197,6 +206,7 @@ h1, h2, h3, h4 {
   ========================================
 */
 body {
+  background: #293f50;
   color: #888;
   font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -226,6 +236,8 @@ strong {
 cite, em {
   font-style: italic;
 }
+
+
 /*
   ========================================
   Links
@@ -275,4 +287,160 @@ p a {
 
 .nav {
   text-align: right;
+}
+.primary-header a,
+.primary-footer a {
+  color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #648880;
+}
+/*
+  ========================================
+  Rows
+  ========================================
+*/
+
+.row {
+  background: #fff;
+  min-width: 960px;
+  padding: 66px 0 44px 0;
+}
+.row,
+.row-alt {
+  min-width: 960px;
+}
+.row-alt {
+   background: #cbe2c1;
+   background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+   background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+   background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+   padding: 44px 0 22px 0;
+ }
+/*
+  ========================================
+  Leads
+  ========================================
+*/
+
+.lead {
+  text-align: center;
+}
+.lead p {
+  font-size: 21px;
+  line-height: 33px;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+.nav li:last-child {
+  margin-right: 0;
+}
+/*
+  ========================================
+  Speakers
+  ========================================
+*/
+  
+.speaker-info {
+  border: 1px solid #dfe2e5;
+  border-radius: 5px;
+  margin-top: 88px;
+  padding-bottom: 22px;
+  text-align: center;
+}
+.speaker {
+  margin-bottom: 44px;
+}
+.teaser img {
+  border-radius: 5px;
+  display: block;
+  max-width: 100%;
+  margin-bottom: 22px;
+}
+.speaker-info img {
+  border-radius: 50%;
+  height: 130px;
+  margin: -66px 0 22px 0;
+  vertical-align: top;
+}
+
+
+/*
+  ========================================
+  Venue
+  ========================================
+*/
+
+.venue-theatre {
+  margin-bottom: 66px;
+}
+.venue-hotel {
+  margin-bottom: 22px;
+}
+.venue-map {
+  height: 264px;
+}
+
+/*
+  ========================================
+  Register
+  ========================================
+*/
+
+.why-attend {
+  list-style: square;
+  margin: 0 0 22px 30px;
+}
+
+
+form {
+  margin-bottom: 22px;
+}
+input,
+select,
+textarea {
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+.register-group label {
+  color: #648880;
+  cursor: pointer;
+  font-weight: 400;
+}
+.register-group input,
+.register-group select,
+.register-group textarea {
+  border: 1px solid #c6c9cc;
+  border-radius: 5px;
+  color: #888;
+  display: block;
+  margin: 5px 0 27px 0;
+  padding: 5px 8px;
+}
+.register-group input,
+.register-group textarea {
+  width: 100%;
+}
+.register-group select {
+  height: 34px;
+  width: 60px;
+}
+.register-group textarea {
+  height: 78px;
+}
+
+.btn-default {
+  border: 0;
+  background: #648880;
+  padding: 11px 30px;
+  font-size: 14px;
+}
+.btn-default:hover {
+  background: #77a198;
 }
